@@ -2,6 +2,10 @@
 #    path: /
 #    controller: App\Controller\DefaultController::index
 
-submit:
+homepage:
   path: /
   controller: App\Controller\FormSubmitController::index
+
+imc_result:
+  path: /imc
+  controller: App\Controller\ShowShowImcResultController::showResult
