@@ -1,18 +1,23 @@
-<title>{% block title %}IMC calculator{% endblock %}</title>
+{% extends 'base.html.twig' %}
+
+{% block title %}IMC calculator{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
 
-<div class="example-wrapper">
-    <form name="form_contato" method="post">
-        <div data-wow-delay="0.3s">
-            <input type="number" class="form-control" name="peso" placeholder="Seu peso atual">
-            <input type="number" class="form-control" name="altura" placeholder="Sua altura em cm">
-            <button class="btn-submit" type="submit"><i class="lni-arrow-right"></i></button>
+<section id="Subscribes" class="subscribes section-padding">
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col-md-10 col-lg-5">
+                <form name="form_contato" method="post">
+                    <div class="subscribe wow fadeInDown" data-wow-delay="0.3s">
+                        <input type="number" min="0.5" step=".1" class="form-control" name="peso" placeholder="Seu peso atual">
+                        <input type="number" min="0.5" step=".1" class="form-control" name="altura" placeholder="Sua altura em cm">
+                        <button class="btn-submit" type="submit"><i class="lni-arrow-right"></i></button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </form>
-</div>
+    </div>
+</section>
+
 {% endblock %}
