@@ -6,13 +6,13 @@
 
 <section id="Subscribes" class="subscribes section-padding">
     <div class="container">
-        <div class="row justify-content-md-center">
-            <div class="col-md-10 col-lg-5">
-                <form name="form_contato" method="post">
+        <div class="row">
+            <div class="input-field col s12 input-to-blank">
+                <form name="form_contato" class="col s12 m12" method="post" action="{{path('imc_result')}}">
                     <div class="subscribe wow fadeInDown" data-wow-delay="0.3s">
-                        <input type="number" min="0.5" step=".1" class="form-control" name="peso" placeholder="Seu peso atual">
-                        <input type="number" min="0.5" step=".1" class="form-control" name="altura" placeholder="Sua altura em cm">
-                        <button class="btn-submit" type="submit"><i class="lni-arrow-right"></i></button>
+                        <input type="number" min="10" step=".1" class="form-control" name="peso" placeholder="Seu peso atual em kg">
+                        <input type="number" min="100" class="form-control" name="altura" placeholder="Sua altura em cm">
+                        <button class="btn waves-effect waves-orange orange btn-to-width col s12" type="submit">Enviar</button>
                     </div>
                 </form>
             </div>

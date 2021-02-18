@@ -3,13 +3,24 @@
 {% block title %}IMC result!{% endblock %}
 
 {% block body %}
+
 <style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
+    .p-subscribe-asking {
+        font-size: 20px !important;
+    }
 </style>
 
-<div class="example-wrapper">
-    <h1>Seu IMC</h1>
-    <p>Seu IMC: {{ imc }}. Sua frase motivacional: {{ incentivo }}</p>
-</div>
+<section id="showResult" class="subscribes section-padding">
+    <div class="container">
+        <div class="row center">
+            <div class="col-md-12 col-lg-8">
+                <h4 class="wow fadeInUp header col s12 teal-text text-2" data-wow-delay="0.3s">Seu IMC</h4>
+                <p class="wow fadeInUp flow-text p-subscribe-asking" data-wow-delay="0.5s">{{ imc }}</p>
+                <h4 class="wow fadeInUp header col s12 teal-text text-2" data-wow-delay="0.7s">Sua frase motivacional</h3>
+                <p class="wow fadeInUp p-subscribe-asking" data-wow-delay="0.9s">{{ incentivo }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
 {% endblock %}

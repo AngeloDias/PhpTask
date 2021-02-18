@@ -8,4 +8,4 @@ homepage:
 
 imc_result:
   path: /imc
-  controller: App\Controller\ShowShowImcResultController::showResult
+  controller: App\Controller\ShowImcResultController::showResult
